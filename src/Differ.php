@@ -134,8 +134,8 @@ class Differ
      */
     public function diffToArray($from, $to, LongestCommonSubsequence $lcs = null)
     {
-        preg_match_all('(\r\n|\r|\n)', $from, $fromMatches);
-        preg_match_all('(\r\n|\r|\n)', $to, $toMatches);
+        // preg_match_all('(\r\n|\r|\n)', $from, $fromMatches);
+        // preg_match_all('(\r\n|\r|\n)', $to, $toMatches);
 
         if (is_string($from)) {
             $from = preg_split('(\r\n|\r|\n)', $from);
